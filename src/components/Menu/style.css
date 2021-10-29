@@ -1,0 +1,77 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.menu__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0 0 50px;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0px 15px;
+}
+
+.menu__create-message {
+  flex: 0 0 auto;
+  padding: 35px 20px;
+}
+
+.menu__categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__labels {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+
+.menu__labels__title {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu__labels__title__icon {
+  color: blueviolet;
+}
+
+.label-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+  padding: 10px 0px;
+  color: grey;
+}
+
+.label i {
+  margin-right: 20px;
+  opacity: 0.6;
+}
+
+.label--personal i {
+  color: red;
+}
+.label--family i {
+  color: yellow;
+}
+.label--friends i {
+  color: blue;
+}
