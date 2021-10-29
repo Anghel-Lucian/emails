@@ -10,7 +10,6 @@ export default class LeftView extends React.PureComponent {
     return (
       <div className="left-view">
         <Menu />
-        this is a mock modification
         <EmailList />
       </div>
     );

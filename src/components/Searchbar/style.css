@@ -1,0 +1,23 @@
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  align-items: center;
+  padding: 30px 15px;
+  border-bottom: 1px solid lightgray;
+}
+
+.searchbar__input {
+  display: flex;
+  flex: 1 0 auto;
+  background-color: inherit;
+  border: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: blueviolet;
+}
+
+.searchbar i {
+  font-size: 1.3rem;
+  color: blueviolet;
+}

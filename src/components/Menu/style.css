@@ -6,7 +6,7 @@
   background-color: white;
 }
 
-.menu__header {
+/* .menu__header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -15,7 +15,8 @@
   font-size: 1.5rem;
   font-style: italic;
   padding: 0px 15px;
-}
+  border-bottom: 1px solid lightgray;
+} */
 
 .menu__create-message {
   flex: 0 0 auto;

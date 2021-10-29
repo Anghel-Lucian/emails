@@ -9,7 +9,7 @@ export default class Menu extends React.PureComponent {
   render = () => {
     return (
       <div className="menu">
-        <div className="menu__header">DCU</div>
+        <div className="menu__header header">DCU</div>
         <div className="menu__create-message">
           <Button content="Create Message" />
         </div>
