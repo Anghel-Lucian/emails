@@ -54,8 +54,10 @@ export default class EmailView extends React.PureComponent {
         </div>
         <div className="email-view__footer">
           <div className="email-view__footer__text">
-            Click here to <a href="rickrolled">Reply</a> or{" "}
-            <a href="rickrolled">Forward</a> SCHLONG's message
+            Click here to{" "}
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reply</a> or{" "}
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Forward</a>{" "}
+            SCHLONG's message
           </div>
           <div className="email-view__footer__icons">
             <i className="fas fa-paperclip"></i>
