@@ -1,0 +1,81 @@
+.email-view {
+  display: flex;
+  flex: 0 1 100%;
+  flex-direction: column;
+  background-color: white;
+}
+
+.email-view__meta {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  padding-top: 20px;
+}
+
+.email-view__meta__sender-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: gray;
+  font-size: 1rem;
+}
+
+.email-view__meta__sender-info .sender-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: darkgray;
+  margin-right: 15px;
+}
+
+.email-view__meta__date {
+  color: gray;
+  font-weight: normal;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+}
+
+.email-view__meta__date i {
+  margin-right: 10px;
+}
+
+.email-view__title {
+  padding-top: 30px;
+  font-size: 1.5rem;
+  padding: 10px 30px;
+}
+
+.email-view__content {
+  display: flex;
+  flex: 1 0 300px;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+  padding: 30px 0px;
+  font-size: 0.9rem;
+  color: gray;
+  padding: 10px 30px;
+  margin-right: 40px;
+}
+
+.email-view__content p {
+  margin: 10px 0px;
+}
+
+.email-view__footer {
+  color: gray;
+}
+
+.email-view__footer__icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.email-view__footer__icons i {
+  margin-right: 20px;
+}

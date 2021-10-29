@@ -28,7 +28,7 @@ export default class EmailList extends React.PureComponent {
           <Email />
           <Email />
         </div>
-        <div className="email-list__add">
+        <div className="email-list__add footer">
           <div>
             <i className="fas fa-plus"></i>
           </div>

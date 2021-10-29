@@ -1,7 +1,12 @@
 .right-view {
   display: flex;
   flex-direction: column;
-  flex: 1 0 auto;
+  flex: 0 1 50%;
   background-color: azure;
   border-left: 1px solid lightgray;
+}
+
+.right-view__content {
+  display: flex;
+  flex: 1 0 auto;
 }

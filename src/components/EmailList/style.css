@@ -22,6 +22,7 @@
 
 .email-list__header__left-item span {
   color: blueviolet;
+  margin-left: 5px;
 }
 
 .email-list__header__right-item {
@@ -41,11 +42,7 @@
 }
 
 .email-list__add {
-  display: flex;
-  flex: 0 1 auto;
-  padding: 15px 0px;
   justify-content: center;
-  border-top: 1px solid lightgray;
 }
 
 .email-list__add div {

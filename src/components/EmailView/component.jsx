@@ -18,41 +18,45 @@ export default class EmailView extends React.PureComponent {
         </div>
         <div className="email-view__title">You're Hired!</div>
         <div className="email-view__content">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
-          ratione delectus eum mollitia? Dolores ullam sequi provident harum,
-          facere sapiente porro.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
-          ratione delectus eum mollitia? Dolores ullam sequi provident harum,
-          facere sapiente porro.Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Provident ipsam voluptatibus aut, repudiandae est
-          odit, beatae perferendis et ratione delectus eum mollitia? Dolores
-          ullam sequi provident harum, facere sapiente porro.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          <br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
-          ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
-          ratione delectus eum mollitia? Dolores ullam sequi provident harum,
-          facere sapiente porro.Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Provident ipsam voluptatibus aut, repudiandae est
-          odit, beatae perferendis et ratione delectus eum mollitia? Dolores
-          ullam sequi provident harum, facere sapiente porro.Lorem ipsum dolor
-          sit amet consectetur adipisicing elit. Provident ipsam voluptatibus
-          aut, repudiandae est odit, beatae perferendis et ratione delectus eum
-          mollitia? Dolores ullam sequi provident harum, facere sapiente
-          porro.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Provident ipsam voluptatibus aut, repudiandae est odit, beatae
-          perferendis et ratione delectus eum mollitia? Dolores ullam sequi
-          provident harum, facere sapiente porro.
-          <br />
-          Lorem,
-          <br />
-          Ipsum
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
+            ratione delectus eum mollitia? Dolores ullam sequi provident harum,
+            facere sapiente porro.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
+            ratione delectus eum mollitia? Dolores ullam sequi provident harum,
+            facere sapiente porro.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Provident ipsam voluptatibus aut, repudiandae est
+            odit, beatae perferendis et ratione delectus eum mollitia? Dolores
+            ullam sequi provident harum, facere sapiente porro.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
+            ratione delectus eum mollitia? Dolores ullam sequi provident harum,
+            facere sapiente porro.Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Provident ipsam voluptatibus aut, repudiandae est
+            odit, beatae perferendis et ratione delectus eum mollitia? Dolores
+            ullam sequi provident harum, facere sapiente porro.Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Provident ipsam voluptatibus
+            aut, repudiandae est odit, beatae perferendis et ratione delectus
+            eum mollitia? Dolores ullam sequi provident harum, facere sapiente
+            porro.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Provident ipsam voluptatibus aut, repudiandae est odit, beatae
+            perferendis et ratione delectus eum mollitia? Dolores ullam sequi
+            provident harum, facere sapiente porro.
+          </p>
+          <p>
+            Lorem,
+            <br></br>
+            Ipsum
+          </p>
         </div>
-        <div className="email-view__footer">
+        <div className="email-view__footer footer">
           <div className="email-view__footer__text">
             Click here to{" "}
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reply</a> or{" "}
@@ -60,8 +64,12 @@ export default class EmailView extends React.PureComponent {
             SCHLONG's message
           </div>
           <div className="email-view__footer__icons">
-            <i className="fas fa-paperclip"></i>
-            <i className="fas fa-paper-plane"></i>
+            <div className="icon secondary-icon">
+              <i className="fas fa-paperclip"></i>
+            </div>
+            <div className="icon main-icon">
+              <i className="fas fa-paper-plane"></i>
+            </div>
           </div>
         </div>
       </div>

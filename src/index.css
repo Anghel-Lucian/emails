@@ -28,3 +28,28 @@ body {
   padding: 0px 15px;
   border-bottom: 1px solid lightgray;
 }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 0 60px;
+  padding: 15px 45px;
+  border-top: 1px solid lightgray;
+}
+
+.main-icon {
+  color: blueviolet;
+}
+
+a {
+  text-decoration: none;
+  color: blueviolet;
+  border-bottom: 2px solid lightgray;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
