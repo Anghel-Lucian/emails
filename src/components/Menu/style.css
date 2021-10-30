@@ -1,4 +1,4 @@
-.menu {
+#menu {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
@@ -32,7 +32,7 @@
   padding: 10px;
 }
 
-.menu__labels__title__icons {
+.menu__labels__title > div {
   display: flex;
   flex: 0 0 40px;
   flex-direction: row;
@@ -73,13 +73,13 @@
   font-size: 1.2rem;
 }
 
-.menu__header__icon-container {
+.menu__header div {
   color: rgb(135, 41, 223);
   position: relative;
   font-size: 1rem;
 }
 
-.menu__header__icon-container:before {
+.menu__header div:before {
   content: "";
   position: absolute;
   top: -1px;

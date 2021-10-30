@@ -9,7 +9,7 @@ export default class MenuCategory extends React.PureComponent {
     return (
       <button className={`category__btn ${selected ? "selected" : ""}`}>
         <div className="category__content">
-          <div className="category__content__icon-container">
+          <div>
             <i
               className={`${
                 iconType ? iconType : "fas"

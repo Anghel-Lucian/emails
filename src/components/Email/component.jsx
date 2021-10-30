@@ -21,7 +21,7 @@ export default class Email extends React.PureComponent {
         </div>
         <div className="email__main-content">
           <div className="email__meta">
-            <div className="email__meta__left-item">
+            <div>
               <p className="email__sender">SCHLONG</p>
               <div className="email__label"></div>
             </div>
@@ -34,7 +34,7 @@ export default class Email extends React.PureComponent {
           </div>
         </div>
         <div className="email__additional-info">
-          <p className="email__date">20.01.2020</p>
+          <p>20.01.2020</p>
           {attachment ? (
             <div className="email__attachment">
               {attachmentCount ? (

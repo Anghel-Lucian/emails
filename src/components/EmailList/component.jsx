@@ -8,7 +8,7 @@ import Searchbar from "../Searchbar";
 export default class EmailList extends React.PureComponent {
   render = () => {
     return (
-      <div className="email-list">
+      <div id="email-list">
         <div className="email-list__header header">
           <div className="email-list__header__left-item">
             Sort: <span>Newest First</span>

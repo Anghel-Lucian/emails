@@ -8,7 +8,7 @@ import EmailList from "../EmailList";
 export default class LeftView extends React.PureComponent {
   render = () => {
     return (
-      <div className="left-view">
+      <div id="left-view">
         <Menu />
         <EmailList />
       </div>

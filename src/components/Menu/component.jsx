@@ -8,10 +8,10 @@ import MenuCategory from "../MenuCategory";
 export default class Menu extends React.PureComponent {
   render = () => {
     return (
-      <div className="menu">
+      <div id="menu">
         <div className="menu__header header">
           <p>DCU</p>
-          <div className="menu__header__icon-container">
+          <div>
             <i className="far fa-bell"></i>
           </div>
         </div>
@@ -35,7 +35,7 @@ export default class Menu extends React.PureComponent {
         <div className="menu__labels">
           <div className="menu__labels__title">
             <p>Labels</p>
-            <div className="menu__labels__title__icons">
+            <div>
               <div className="main-icon">
                 <i className="fas fa-pen" />
               </div>

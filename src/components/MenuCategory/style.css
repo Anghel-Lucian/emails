@@ -24,7 +24,7 @@
   color: rgb(128, 128, 128);
 }
 
-.category__content__icon-container {
+.category__content div {
   width: 30px;
 }
 

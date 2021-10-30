@@ -7,7 +7,7 @@
   border-bottom: 1px solid rgb(211, 211, 211);
 }
 
-.searchbar__input {
+.searchbar input {
   display: flex;
   flex: 1 0 auto;
   background-color: inherit;

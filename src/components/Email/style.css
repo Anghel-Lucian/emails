@@ -54,7 +54,7 @@
   color: rgb(128, 128, 128);
 }
 
-.email__meta__left-item {
+.email__meta div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -82,22 +82,6 @@
   align-items: flex-end;
 }
 
-.email__attachment {
-  display: flex;
-  flex-direction: row;
-  color: rgb(135, 41, 223);
-}
-
-.email__attachment i {
-  font-size: 0.9rem;
-  margin-left: 5px;
-}
-
-.email__attachment__count {
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
 .email__text {
   display: flex;
   flex-direction: column;
@@ -113,4 +97,20 @@
 .email__preface {
   color: rgb(211, 211, 211);
   font-size: 0.8rem;
+}
+
+.email__attachment {
+  display: flex;
+  flex-direction: row;
+  color: rgb(135, 41, 223);
+}
+
+.email__attachment i {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.email__attachment__count {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
