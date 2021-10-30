@@ -43,7 +43,6 @@
 .label-list {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
 }
 
 .label {
@@ -52,13 +51,17 @@
   align-items: center;
   justify-content: flex-start;
   flex: 1;
-  padding: 10px 0px;
-  /* some line */
+  padding: 10px 10px;
   color: grey;
 }
 
 .label .circle {
-  margin-right: 10px;
+  margin-right: 20px;
+}
+
+.label__title {
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .menu__header {
@@ -66,9 +69,14 @@
   justify-content: space-between;
 }
 
+.menu__header p {
+  font-size: 1.2rem;
+}
+
 .menu__header__icon-container {
   color: blueviolet;
   position: relative;
+  font-size: 1rem;
 }
 
 .menu__header__icon-container:before {
@@ -77,8 +85,8 @@
   top: -1px;
   right: -1px;
   transform: translate(30%, -25%);
-  width: 7px;
-  height: 7px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   background: red;
 }

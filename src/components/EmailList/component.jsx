@@ -12,6 +12,7 @@ export default class EmailList extends React.PureComponent {
         <div className="email-list__header header">
           <div className="email-list__header__left-item">
             Sort: <span>Newest First</span>
+            <i className="fas fa-sort-down"></i>
           </div>
           <div className="email-list__header__right-item">
             <i className="far fa-folder"></i>
@@ -23,6 +24,7 @@ export default class EmailList extends React.PureComponent {
         <Searchbar />
 
         <div className="email-list__emails">
+          <Email selected="true" />
           <Email />
           <Email />
           <Email />

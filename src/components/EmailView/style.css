@@ -20,7 +20,7 @@
   flex-direction: row;
   align-items: center;
   color: gray;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 .email-view__meta__sender-info .sender-image {
@@ -57,10 +57,14 @@
   justify-content: space-between;
   overflow-y: scroll;
   padding: 30px 0px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: gray;
   padding: 10px 30px;
   margin-right: 40px;
+}
+
+.email-view__content::-webkit-scrollbar {
+  display: none;
 }
 
 .email-view__content p {
@@ -69,6 +73,9 @@
 
 .email-view__footer {
   color: gray;
+  padding-left: 30px;
+  padding-right: 5px;
+  font-size: 0.8rem;
 }
 
 .email-view__footer__icons {

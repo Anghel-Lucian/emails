@@ -15,13 +15,20 @@
   flex-direction: row;
   flex: 1;
   justify-content: flex-start;
+  align-items: center;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: gray;
 }
 
 .email-list__header__left-item span {
-  color: blueviolet;
+  color: black;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.email-list__header__left-item i {
+  margin-top: -5px;
   margin-left: 5px;
 }
 
@@ -29,9 +36,13 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  justify-content: space-around;
+  justify-content: flex-end;
   font-size: 1rem;
   color: gray;
+}
+
+.email-list__header__right-item i {
+  margin-left: 20px;
 }
 
 .email-list__emails {
@@ -41,6 +52,10 @@
   overflow-y: scroll;
 }
 
+.email-list__emails::-webkit-scrollbar {
+  display: none;
+}
+
 .email-list__add {
   justify-content: center;
 }
@@ -48,8 +63,8 @@
 .email-list__add div {
   color: white;
   padding: 10px;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-color: blueviolet;
   border-radius: 50%;
   display: flex;

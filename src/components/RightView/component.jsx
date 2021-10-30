@@ -8,7 +8,9 @@ export default class RightView extends React.PureComponent {
   render = () => {
     return (
       <div className="right-view">
-        <div className="right-view__header header">Header</div>
+        <div className="right-view__header header">
+          <div className="user-avatar"></div>
+        </div>
         <div className="right-view__content">
           <EmailView />
         </div>
