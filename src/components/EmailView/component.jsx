@@ -67,6 +67,7 @@ export default class EmailView extends React.PureComponent {
             <div className="icon secondary-icon">
               <i className="fas fa-paperclip"></i>
             </div>
+
             <div className="icon main-icon">
               <i className="fas fa-paper-plane"></i>
             </div>
