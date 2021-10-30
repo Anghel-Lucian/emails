@@ -22,7 +22,7 @@ export default class EmailView extends React.PureComponent {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
             ratione delectus eum mollitia? Dolores ullam sequi provident harum,
-            facere sapiente porro.
+            facere sapiente porro. Some line
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
