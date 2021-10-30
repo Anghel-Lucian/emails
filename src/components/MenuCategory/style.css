@@ -1,5 +1,5 @@
 .category__btn {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border: none;
   display: flex;
   flex: 0 0 40px;
@@ -12,7 +12,7 @@
 }
 
 .category__btn:hover {
-  background-color: lightgray;
+  background-color: rgb(211, 211, 211);
   cursor: pointer;
 }
 
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  color: grey;
+  color: rgb(128, 128, 128);
 }
 
 .category__content__icon-container {
@@ -38,26 +38,26 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  color: grey;
+  color: rgb(128, 128, 128);
   font-size: 0.8rem;
 }
 
 .category__count p {
-  background-color: darkgray;
+  background-color: rgb(170, 166, 166);
   padding: 3px 15px;
   border-radius: 25px;
 }
 
 .category__btn.selected {
-  box-shadow: inset 3px 0px blueviolet !important;
-  background-color: darkgray;
+  box-shadow: inset 3px 0px rgb(135, 41, 223) !important;
+  background-color: rgb(170, 166, 166);
 }
 
 .category__btn.selected * {
-  color: blueviolet;
+  color: rgb(135, 41, 223);
 }
 
 .category__btn.selected .category__count p {
-  background-color: blueviolet;
-  color: white;
+  background-color: rgb(135, 41, 223);
+  color: rgb(255, 255, 255);
 }

@@ -3,7 +3,7 @@
   flex: 0 1 auto;
   flex-direction: row;
   padding: 0px 15px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(211, 211, 211);
 }
 
 .email:last-child {
@@ -11,12 +11,12 @@
 }
 
 .email--selected {
-  box-shadow: inset 3px 0px blueviolet !important;
-  background-color: white;
+  box-shadow: inset 3px 0px rgb(135, 41, 223) !important;
+  background-color: rgb(255, 255, 255);
 }
 
 .email:hover {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .email__left-bar {
@@ -27,22 +27,15 @@
   justify-content: space-around;
 }
 
-.email__left-bar div {
-  background-color: gray;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
 .email__left-bar button {
   background-color: inherit;
   border: none;
-  color: lightgray;
+  color: rgb(211, 211, 211);
 }
 
 .email__left-bar button:hover {
   cursor: pointer;
-  color: orange;
+  color: rgb(255, 165, 0);
 }
 
 .email__main-content {
@@ -58,7 +51,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  color: gray;
+  color: rgb(128, 128, 128);
 }
 
 .email__meta__left-item {
@@ -76,13 +69,33 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
 
-.email__date {
+.email__additional-info {
   font-size: 0.8rem;
   display: flex;
   padding: 10px 0px;
+  color: rgb(128, 128, 128);
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.email__attachment {
+  display: flex;
+  flex-direction: row;
+  color: rgb(135, 41, 223);
+}
+
+.email__attachment i {
+  font-size: 0.9rem;
+  margin-left: 5px;
+}
+
+.email__attachment__count {
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
 .email__text {
@@ -98,6 +111,6 @@
 }
 
 .email__preface {
-  color: lightgray;
+  color: rgb(211, 211, 211);
   font-size: 0.8rem;
 }

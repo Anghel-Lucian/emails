@@ -3,7 +3,7 @@
   flex-direction: column;
   flex: 0 0 auto;
   justify-content: flex-start;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .menu__create-message {
@@ -52,7 +52,7 @@
   justify-content: flex-start;
   flex: 1;
   padding: 10px 10px;
-  color: grey;
+  color: rgb(128, 128, 128);
 }
 
 .label .circle {
@@ -74,7 +74,7 @@
 }
 
 .menu__header__icon-container {
-  color: blueviolet;
+  color: rgb(135, 41, 223);
   position: relative;
   font-size: 1rem;
 }
@@ -88,5 +88,5 @@
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  background: red;
+  background: rgb(255, 0, 0);
 }

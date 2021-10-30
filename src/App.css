@@ -4,3 +4,31 @@
   flex-direction: row;
   overflow: hidden;
 }
+
+@media only screen and (max-width: 1050px) {
+  #app {
+    flex-direction: column;
+    overflow-y: scroll;
+    position: absolute;
+    top: 60px;
+  }
+
+  #app::-webkit-scrollbar {
+    display: none;
+  }
+
+  #right-view__header {
+    position: fixed;
+    top: 0;
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .menu {
+    flex: 1 1 auto !important;
+  }
+}

@@ -4,7 +4,7 @@
   flex: 0 1 auto;
   align-items: center;
   padding: 20px 15px;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid rgb(211, 211, 211);
 }
 
 .searchbar__input {
@@ -14,10 +14,10 @@
   border: none;
   font-size: 1rem;
   font-weight: 400;
-  color: blueviolet;
+  color: rgb(135, 41, 223);
 }
 
 .searchbar i {
   font-size: 1rem;
-  color: blueviolet;
+  color: rgb(135, 41, 223);
 }

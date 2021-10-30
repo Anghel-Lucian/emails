@@ -2,7 +2,7 @@
   display: flex;
   flex: 0 1 100%;
   flex-direction: column;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .email-view__meta {
@@ -19,20 +19,12 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  color: gray;
+  color: rgb(128, 128, 128);
   font-size: 0.8rem;
 }
 
-.email-view__meta__sender-info .sender-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: darkgray;
-  margin-right: 15px;
-}
-
 .email-view__meta__date {
-  color: gray;
+  color: rgb(128, 128, 128);
   font-weight: normal;
   display: flex;
   flex-direction: row;
@@ -58,7 +50,7 @@
   overflow-y: scroll;
   padding: 30px 0px;
   font-size: 0.8rem;
-  color: gray;
+  color: rgb(128, 128, 128);
   padding: 10px 30px;
   margin-right: 40px;
 }
@@ -72,7 +64,7 @@
 }
 
 .email-view__footer {
-  color: gray;
+  color: rgb(128, 128, 128);
   padding-left: 30px;
   padding-right: 5px;
   font-size: 0.8rem;

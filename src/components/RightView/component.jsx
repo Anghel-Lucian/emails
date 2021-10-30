@@ -7,14 +7,13 @@ import EmailView from "../EmailView";
 export default class RightView extends React.PureComponent {
   render = () => {
     return (
-      <div className="right-view">
-        <div className="right-view__header header">
-          <div className="user-avatar"></div>
+      <div id="right-view">
+        <div id="right-view__header" className="header">
+          <div id="user-avatar" className="avatar"></div>
         </div>
-        <div className="right-view__content">
+        <div id="right-view__content">
           <EmailView />
         </div>
-        <div className="right-view__footer"></div>
       </div>
     );
   };

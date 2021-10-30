@@ -25,9 +25,9 @@ export default class EmailList extends React.PureComponent {
 
         <div className="email-list__emails">
           <Email selected="true" />
+          <Email attachment="true" />
           <Email />
-          <Email />
-          <Email />
+          <Email attachment="true" attachmentCount={2} />
           <Email />
         </div>
         <div className="email-list__add footer">

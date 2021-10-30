@@ -4,12 +4,16 @@ import "./style.css";
 
 export default class Email extends React.PureComponent {
   render = () => {
-    const { selected = false } = this.props;
+    const {
+      selected = false,
+      attachment = false,
+      attachmentCount = null,
+    } = this.props;
 
     return (
       <div className={`email ${selected ? "email--selected" : ""}`}>
         <div className="email__left-bar">
-          <div></div>
+          <div className="avatar avatar--small"></div>
           <input type="checkbox"></input>
           <button>
             <i className="fas fa-star"></i>
@@ -29,7 +33,17 @@ export default class Email extends React.PureComponent {
             </p>
           </div>
         </div>
-        <p className="email__date">20.01.2020</p>
+        <div className="email__additional-info">
+          <p className="email__date">20.01.2020</p>
+          {attachment ? (
+            <div className="email__attachment">
+              {attachmentCount ? (
+                <p className="email__attachment__count">{attachmentCount}</p>
+              ) : null}
+              <i className="fas fa-paperclip"></i>
+            </div>
+          ) : null}
+        </div>
       </div>
     );
   };

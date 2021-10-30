@@ -8,7 +8,7 @@ export default class EmailView extends React.PureComponent {
       <div className="email-view">
         <div className="email-view__meta">
           <div className="email-view__meta__sender-info">
-            <div className="sender-image"></div>
+            <div className="sender-avatar avatar"></div>
             <div className="sender-name">SCHLONG</div>
           </div>
           <div className="email-view__meta__date">
@@ -22,7 +22,7 @@ export default class EmailView extends React.PureComponent {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
             ipsam voluptatibus aut, repudiandae est odit, beatae perferendis et
             ratione delectus eum mollitia? Dolores ullam sequi provident harum,
-            facere sapiente porro. Some line
+            facere sapiente porro.
           </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident

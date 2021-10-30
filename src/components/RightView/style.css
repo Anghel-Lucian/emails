@@ -1,4 +1,4 @@
-.right-view {
+#right-view {
   display: flex;
   flex-direction: column;
   flex: 1 0 60%;
@@ -6,23 +6,14 @@
   border-left: 1px solid lightgray;
 }
 
-.right-view__header {
+#right-view__header {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding: 0px 0px;
 }
 
-.user-avatar {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: darkgray;
-  margin-right: 15px;
-  position: relative;
-}
-
-.user-avatar:before {
+#user-avatar:before {
   content: "";
   position: absolute;
   top: -1px;
@@ -31,11 +22,11 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: blueviolet;
+  background: rgb(135, 41, 223);
   border: 2px solid rgb(238, 238, 238);
 }
 
-.right-view__content {
+#right-view__content {
   display: flex;
   flex: 1 0 auto;
 }
