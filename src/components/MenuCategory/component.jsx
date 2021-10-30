@@ -4,17 +4,21 @@ import "./style.css";
 
 export default class MenuCategory extends React.PureComponent {
   render = () => {
-    const { icon, content, count, selected } = this.props;
+    const { icon, iconType, content, count, selected } = this.props;
 
     return (
       <button className={`category__btn ${selected ? "selected" : ""}`}>
         <div className="category__content">
-          <i className={`fas fa-${icon} category__icon`} />
+          <div className="category__content__icon-container">
+            <i
+              className={`${
+                iconType ? iconType : "fas"
+              } fa-${icon} category__icon`}
+            />
+          </div>
           <p>{content}</p>
         </div>
-        <div className="category__count">
-          <p>{count}</p>
-        </div>
+        <div className="category__count">{count ? <p>{count}</p> : null}</div>
       </button>
     );
   };

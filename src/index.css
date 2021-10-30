@@ -14,7 +14,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .header {
@@ -52,4 +53,36 @@ a {
 a:hover {
   cursor: pointer;
   opacity: 0.9;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 3px solid;
+  background-color: inherit !important;
+}
+
+.red {
+  color: red;
+  background-color: red;
+  border-color: red;
+}
+
+.yellow {
+  color: yellow;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.blue {
+  color: blue;
+  background-color: blue;
+  border-color: blue;
+}
+
+.purple {
+  color: blueviolet;
+  background-color: blueviolet;
+  border-color: blueviolet;
 }
