@@ -77,3 +77,27 @@ a:hover {
   border: 3px solid;
   background-color: inherit !important;
 }
+
+.red {
+  color: red;
+  background-color: red;
+  border-color: red;
+}
+
+.yellow {
+  color: yellow;
+  background-color: yellow;
+  border-color: yellow;
+}
+
+.blue {
+  color: blue;
+  background-color: blue;
+  border-color: blue;
+}
+
+.purple {
+  color: blueviolet;
+  background-color: blueviolet;
+  border-color: blueviolet;
+}

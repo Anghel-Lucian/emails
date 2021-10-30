@@ -3,7 +3,7 @@
   flex-direction: column;
   flex: 1 0 60%;
   background-color: rgb(238, 238, 238);
-  border-left: 1px solid lightgray;
+  border-left: 1px solid rgb(211, 211, 211);
 }
 
 #right-view__header {
