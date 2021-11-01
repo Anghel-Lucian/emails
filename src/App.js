@@ -12,6 +12,7 @@ let contacts;
 let user;
 let deletedEmails;
 let inboxEmails;
+let sentEmails;
 
 const parseJSON = () => {
   
@@ -25,22 +26,26 @@ const parseJSON = () => {
 
   user = userJSON.map((data) => {
     return data
-  });
+  })[0];
 
   emails = emails.map(email => {
-    const [{firstName, lastName, profilePicture}] = contacts.filter(contact => contact.email === email.fromAddress);
+    const [sender] = contacts.filter(contact => contact.email === email.fromAddress && email.fromAddress !== user.email);
 
-    return {...email, previewBody: email.body.substring(0, 100), sender: {firstName, lastName, profilePicture}, selected: false, checkSelected: false };
+    return {...email, previewBody: email.body.substring(0, 100), sender: sender, selected: false, checkSelected: false };
   });
 
   deletedEmails = emails.filter(email => email.isDeleted);
 
-  inboxEmails = emails.filter(email => !email.isDeleted);
+  inboxEmails = emails.filter(email => !email.isDeleted && email.fromAddress !== user.email);
 
+  sentEmails = emails.filter(email => email.fromAddress === user.email).map(email => {
+      return {...email, previewBody: email.body.substring(0, 100), sender: user, selected: false, checkSelected: false };
+  });
   // console.log(deletedEmails);
   // console.log(emails);
   // console.log(contacts);
-  // console.log(user);
+  console.log(user);
+  console.log(sentEmails);
 }
 parseJSON();
 
@@ -52,8 +57,8 @@ export default class App extends React.PureComponent {
     inboxEmails: inboxEmails,
     currentEmail: emails[0],
     user: {
-      ...user[0],
-      sentEmails: [],
+      ...user,
+      sentEmails: sentEmails,
     },
     emailsFolder: 'inbox',
     renderedEmails: [],
@@ -91,6 +96,8 @@ export default class App extends React.PureComponent {
   }
 
   render = () => {
+    console.log(user);
+
     const { renderedEmails, currentEmail } = this.state;
 
     return (
@@ -103,7 +110,7 @@ export default class App extends React.PureComponent {
           changeEmailsToSent={this.changeEmailsToSent}
         />
 
-        <RightView currentEmail={currentEmail} />
+        <RightView currentEmail={currentEmail} user={user} />
       </div>
     );
   };

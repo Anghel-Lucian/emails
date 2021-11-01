@@ -14,6 +14,8 @@ export default class Email extends React.PureComponent {
   renderUserAvatar = () => {
     const {sender} = this.props;
 
+    if(!sender) return;
+
     return (sender.profilePicture ? (
       <img alt="Sender avatar" src={sender.profilePicture}></img>
     ) : (<p>{sender.firstName[0]}{sender.lastName[0]}</p>));

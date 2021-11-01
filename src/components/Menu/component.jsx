@@ -33,7 +33,7 @@ export default class Menu extends React.PureComponent {
           <MenuCategory icon="pen" content="Drafts" />
           <MenuCategory icon="paper-plane" content="Sent" count={123} changeEmailsTo={changeEmailsToSent} />
           <MenuCategory icon="trash-alt" content="Deleted"  changeEmailsTo={changeEmailsToDeleted} />
-          <MenuCategory icon="trash" content="Spam" count={55} />
+          <MenuCategory icon="trash" content="Spam" />
         </div>
         <div className="menu__labels">
           <div className="menu__labels__title">
