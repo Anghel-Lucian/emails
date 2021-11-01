@@ -43,7 +43,7 @@ export default class App extends React.PureComponent {
   state = {
     emails: emails,
     deletedEmails: [],
-    currentEmail: {},
+    currentEmail: emails[0],
     user: {
       ...user[0],
       sentEmails: [],
