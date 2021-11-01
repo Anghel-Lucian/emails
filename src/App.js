@@ -37,7 +37,7 @@ const parseJSON = () => {
 
   inboxEmails = emails.filter(email => !email.isDeleted);
 
-  console.log(deletedEmails);
+  // console.log(deletedEmails);
   // console.log(emails);
   // console.log(contacts);
   // console.log(user);
@@ -48,14 +48,14 @@ parseJSON();
 export default class App extends React.PureComponent {
   state = {
     emails: emails,
-    deletedEmails: [],
-    inboxEmails: [],
+    deletedEmails: deletedEmails,
+    inboxEmails: inboxEmails,
     currentEmail: emails[0],
     user: {
       ...user[0],
       sentEmails: [],
     },
-    displayedEmails: 'inbox',
+    emailsFolder: 'inbox',
     renderedEmails: [],
   }
 
@@ -68,16 +68,21 @@ export default class App extends React.PureComponent {
   //   ) : (<p>{sender.firstName[0]}{sender.lastName[0]}</p>));
   // }
 
-  // componentDidUpdate = () => {
-  //   console.log('component updated');
-  //   const {displayedEmails, deletedEmails, inboxEmails, user} = this.state;
+  componentDidMount = () => {
+    this.setState((state, props) => ({renderedEmails: state.inboxEmails}))
+  }
 
-  //   if(displayedEmails === 'inbox') {
-  //     this.setState((state, props) => {
-  //       return state.renderedEmails = 
-  //     })
-  //   }
-  // }
+  changeEmailsToInbox = () => {
+    this.setState((state, props) => ({renderedEmails: state.inboxEmails}))
+  }
+
+  changeEmailsToSent = () => {
+    this.setState((state, props) => ({renderedEmails: state.user.sentEmails}))
+  }
+
+  changeEmailsToDeleted = () => {
+    this.setState((state, props) => ({renderedEmails: state.deletedEmails}))
+  }
 
   changeCurrentEmail = (id) => {
     this.setState((state, props) => (
@@ -86,11 +91,17 @@ export default class App extends React.PureComponent {
   }
 
   render = () => {
-    const { emails, currentEmail } = this.state;
+    const { renderedEmails, currentEmail } = this.state;
 
     return (
       <div id="app">
-        <LeftView emails={emails} changeCurrentEmail={this.changeCurrentEmail} renderEmailFolder={this.renderEmailFolder} />
+        <LeftView 
+          emails={renderedEmails} 
+          changeCurrentEmail={this.changeCurrentEmail} 
+          changeEmailsToInbox={this.changeEmailsToInbox} 
+          changeEmailsToDeleted={this.changeEmailsToDeleted} 
+          changeEmailsToSent={this.changeEmailsToSent}
+        />
 
         <RightView currentEmail={currentEmail} />
       </div>

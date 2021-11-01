@@ -4,10 +4,10 @@ import "./style.css";
 
 export default class MenuCategory extends React.PureComponent {
   render = () => {
-    const { icon, iconType, content, count, selected } = this.props;
+    const { icon, iconType, content, count, selected, changeEmailsTo } = this.props;
 
     return (
-      <button className={`category__btn ${selected ? "selected" : ""}`}>
+      <button className={`category__btn ${selected ? "selected" : ""}`} onClick={changeEmailsTo}>
         <div className="category__content">
           <div>
             <i

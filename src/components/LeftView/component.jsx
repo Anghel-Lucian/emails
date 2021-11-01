@@ -7,11 +7,15 @@ import EmailList from "../EmailList";
 
 export default class LeftView extends React.PureComponent {
   render = () => {
-    const {emails, changeCurrentEmail} = this.props;
+    const {emails, changeCurrentEmail, changeEmailsToInbox, changeEmailsToDeleted, changeEmailsToSent } = this.props;
 
     return (
       <div id="left-view">
-        <Menu />
+        <Menu 
+          changeEmailsToInbox={changeEmailsToInbox}
+          changeEmailsToDeleted={changeEmailsToDeleted}
+          changeEmailsToSent={changeEmailsToSent}
+        />
         <EmailList emails={emails} changeCurrentEmail={changeCurrentEmail}/>
       </div>
     );

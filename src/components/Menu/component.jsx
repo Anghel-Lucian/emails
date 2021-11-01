@@ -7,6 +7,8 @@ import MenuCategory from "../MenuCategory";
 
 export default class Menu extends React.PureComponent {
   render = () => {
+    const {changeEmailsToInbox, changeEmailsToDeleted, changeEmailsToSent} = this.props;
+
     return (
       <div id="menu">
         <div className="menu__header header">
@@ -24,12 +26,13 @@ export default class Menu extends React.PureComponent {
             content="Inbox"
             count={9}
             selected={true}
+            changeEmailsTo={changeEmailsToInbox}
           />
           <MenuCategory icon="star" iconType="far" content="Marked" />
           <MenuCategory icon="user-friends" content="Group" />
           <MenuCategory icon="pen" content="Drafts" />
-          <MenuCategory icon="paper-plane" content="Sent" count={123} />
-          <MenuCategory icon="trash-alt" content="Deleted" />
+          <MenuCategory icon="paper-plane" content="Sent" count={123} changeEmailsTo={changeEmailsToSent} />
+          <MenuCategory icon="trash-alt" content="Deleted"  changeEmailsTo={changeEmailsToDeleted} />
           <MenuCategory icon="trash" content="Spam" count={55} />
         </div>
         <div className="menu__labels">
