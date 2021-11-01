@@ -13,6 +13,10 @@
   padding: 0px 0px;
 }
 
+#user-avatar.avatar {
+  overflow: visible;
+}
+
 #user-avatar:before {
   content: "";
   position: absolute;

@@ -6,7 +6,7 @@ import EmailView from "../EmailView";
 
 export default class RightView extends React.PureComponent {
   render = () => {
-    const {currentEmail} = this.props;
+    const {currentEmail = {}} = this.props;
 
     return (
       <div id="right-view">

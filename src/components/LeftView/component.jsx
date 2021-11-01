@@ -12,7 +12,7 @@ export default class LeftView extends React.PureComponent {
     return (
       <div id="left-view">
         <Menu />
-        <EmailList emails={emails} changeCurrentEmail={changeCurrentEmail} />
+        <EmailList emails={emails} changeCurrentEmail={changeCurrentEmail}/>
       </div>
     );
   };

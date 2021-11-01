@@ -10,6 +10,15 @@ export default class Email extends React.PureComponent {
     changeCurrentEmail(id);
   }
 
+  // TODO: replace this with the renderUserAvatar function from App component
+  renderUserAvatar = () => {
+    const {sender} = this.props;
+
+    return (sender.profilePicture ? (
+      <img alt="Sender avatar" src={sender.profilePicture}></img>
+    ) : (<p>{sender.firstName[0]}{sender.lastName[0]}</p>));
+  }
+
   render = () => {
     const {
       attachment = false,
@@ -24,7 +33,7 @@ export default class Email extends React.PureComponent {
     return (
       <div className={`email ${selected ? "email--selected" : ""}`} onClick={this.onClick} >
         <div className="email__left-bar">
-          <div className="avatar avatar--small"></div>
+          <div className="avatar avatar--small">{this.renderUserAvatar()}</div>
           <input type="checkbox"></input>
           <button>
             <i className="fas fa-star"></i>

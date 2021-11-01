@@ -8,13 +8,13 @@ import Searchbar from "../Searchbar";
 export default class EmailList extends React.PureComponent {
 
   renderedEmails = () => {
-    const {emails, changeCurrentEmail} = this.props;
+    const {emails, changeCurrentEmail, renderUserAvatar} = this.props;
 
     return emails.map((email) => {
       const {subject, previewBody, selected, sender, id, date} = email;
 
       return (
-        <Email subject={subject} previewBody={previewBody} selected={selected} sender={sender} id={id} key={id} date={date} changeCurrentEmail={changeCurrentEmail} />
+        <Email subject={subject} previewBody={previewBody} selected={selected} sender={sender} id={id} key={id} date={date} changeCurrentEmail={changeCurrentEmail} renderUserAvatar={renderUserAvatar}/>
       )
     })
   }
