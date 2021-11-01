@@ -45,8 +45,8 @@ const parseJSON = () => {
   // console.log(deletedEmails);
   // console.log(emails);
   // console.log(contacts);
-  console.log(user);
-  console.log(sentEmails);
+  // console.log(user);
+  // console.log(sentEmails);
 }
 parseJSON();
 
@@ -62,7 +62,7 @@ export default class App extends React.PureComponent {
       sentEmails: sentEmails,
     },
     emailsFolder: 'inbox',
-    renderedEmails: [],
+    renderedEmails: inboxEmails,
   }
 
   // TODO: use this function where you render avatars
@@ -74,9 +74,9 @@ export default class App extends React.PureComponent {
   //   ) : (<p>{sender.firstName[0]}{sender.lastName[0]}</p>));
   // }
 
-  componentDidMount = () => {
-    this.setState((state, props) => ({renderedEmails: state.inboxEmails}))
-  }
+  // componentDidMount = () => {
+  //   this.setState((state, props) => ({renderedEmails: state.inboxEmails}))
+  // }
 
   changeEmailsToInbox = () => {
     this.setState((state, props) => ({renderedEmails: state.inboxEmails}))
