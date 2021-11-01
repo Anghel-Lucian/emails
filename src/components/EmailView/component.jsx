@@ -29,7 +29,7 @@ export default class EmailView extends React.PureComponent {
             Click here to{" "}
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Reply</a> or{" "}
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Forward</a>{" "}
-            SCHLONG's message
+            {sender.firstName}'s message
           </div>
           <div className="email-view__footer__icons">
             <div className="icon secondary-icon">
