@@ -4,13 +4,14 @@ import "./style.css";
 
 export default class EmailView extends React.PureComponent {
   renderUserAvatar = () => {
-    const {sender} = this.props.currentEmail;
+    const {currentEmail = {}, user = {}} = this.props;
+    const subject = currentEmail.sender ? currentEmail.sender : user;
 
-    if(!sender) return;
+    if(!subject) return;
 
-    return (sender.profilePicture ? (
-      <img alt="Sender avatar" src={sender.profilePicture}></img>
-    ) : (<p>{sender.firstName[0]}{sender.lastName[0]}</p>));
+    return (subject.profilePicture ? (
+      <img alt="Sender avatar" src={subject.profilePicture}></img>
+    ) : (<p>{subject.firstName[0]}{subject.lastName[0]}</p>));
   }
 
   render = () => {

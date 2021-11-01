@@ -16,7 +16,7 @@ export default class RightView extends React.PureComponent {
   }
 
   render = () => {
-    const {currentEmail = {}} = this.props;
+    const {currentEmail = {}, user} = this.props;
 
     return (
       <div id="right-view">
@@ -26,7 +26,7 @@ export default class RightView extends React.PureComponent {
           </div>
         </div>
         <div id="right-view__content">
-          <EmailView currentEmail={currentEmail} />
+          <EmailView currentEmail={currentEmail} user={user} />
         </div>
       </div>
     );

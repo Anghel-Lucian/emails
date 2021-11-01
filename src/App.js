@@ -5,7 +5,7 @@ import contactsJSON from './data/contacts.json'
 import userJSON from './data/user.json'
 import "./App.css";
 
-import { LeftView, RightView, EmailList } from "./components";
+import { LeftView, RightView } from "./components";
 
 let emails;
 let contacts;
@@ -41,6 +41,7 @@ const parseJSON = () => {
   sentEmails = emails.filter(email => email.fromAddress === user.email).map(email => {
       return {...email, previewBody: email.body.substring(0, 100), sender: user, selected: false, checkSelected: false };
   });
+
   // console.log(deletedEmails);
   // console.log(emails);
   // console.log(contacts);
